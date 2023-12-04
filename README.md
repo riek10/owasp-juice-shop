@@ -10,12 +10,12 @@ This tutorial goes through the various vulnerabilities capable of being exploite
 
 - Microsoft Azure (Virtual Machines/Computer)
 - Remote Desktop
-- Zed Attack Proxy(ZAP)
+- BurpSuite
 - Juice Shop Web Application
 
 <h2>Operating Systems Used </h2>
 
-- Kali Linux</b> (21H2)
+- Microsoft Windows</b> (21H2)
 
 <h2>Ticket Lifecycle Stages</h2>
 
