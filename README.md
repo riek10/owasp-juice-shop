@@ -8,28 +8,28 @@ This tutorial goes through the various vulnerabilities capable of being exploite
 
 <h2>Environments and Technologies Used</h2>
 
-- Microsoft Azure (Virtual Machines/Computer)
-- Remote Desktop
-- BurpSuite
+- VirtualBox
+- Zaproxy (ZAP)
 - Juice Shop Web Application
 
 <h2>Operating Systems Used </h2>
 
-- Microsoft Windows</b> (21H2)
+- Kali Linux</b> 
 
-<h2>Ticket Lifecycle Stages</h2>
+<h2>Vulnerability Testing & Enumeration</h2>
 
-- Intake
-- Assignment and Communication
-- Working the Issue
-- Resolution
+- Null Byte Bypass
+- 
 
-<h2>Lifecycle Stages</h2>
+<h2>Vulnerability Tests</h2>
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/riek10/owasp-juice-shop/assets/113129662/b9905956-50e5-484b-948f-752843d2b5a5" height="45%" width="45%"/>
+<img src="https://github.com/riek10/owasp-juice-shop/assets/113129662/0270e8fe-e8c0-41d4-8b25-e221696e1e13" height="45%" width="45%"/>
+<img src="https://github.com/riek10/owasp-juice-shop/assets/113129662/022afd5e-3953-4812-b142-a5ccff26c4af" height="45%" width="45%"/>
+
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+The first vulnerability that was tested on the Juice Shop web application was a Null Byte Bypass. This is a technique in which you input data that would otherwise be filtered out. This can be used to bypass upload restrictions or in this case view a file that isn't viewable in its current format. I opted to use the Null Byte Character "%2500" in order to view the "Package.Json.bak" file that i discovered in the hidden ftp page. I used Zaproxy which is a web application scanner in order to change the parameters of package.json.bak file search and insert the bypass to gain access to the file. As you can see the null byte characters were able to trick the web application into thinking the json.bak file was instead a .md file which i was then able to view.
 </p>
 <br />
