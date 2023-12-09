@@ -4,7 +4,7 @@
 </p>
 
 <h1>Owasp Juice Shop- Web Application Security: Vulnerability testing </h1>
-This tutorial goes through the various vulnerabilities capable of being exploited in Owasp juice Shop Web Application<br />
+This tutorial goes through the various exploitations capable of being executed on Owasp juice Shop Web Application<br />
 
 <h2>Environments and Technologies Used</h2>
 
